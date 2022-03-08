@@ -78,4 +78,8 @@ body {
 .challenge {
 	padding: 18px;
 	font-size: 0.9rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 }

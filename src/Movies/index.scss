@@ -24,6 +24,114 @@
   color: white;
 }
 
+.content {
+  display: flex;
+  flex-wrap: wrap;
+
+  &--btw {
+    justify-content: space-between;
+  }
+  
+  &--column {
+    flex-direction: column;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 1008px;
+  height: 100px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d8e1eb;
+
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+
+    & span {
+      font-family: Poppins;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+
+    & input {
+      width: 180px;
+      height: 38px;
+      border: 1px solid #c5d2e0;
+      border-radius: 2px;
+      background: #ffffff;
+      margin-right: 10px;
+    }
+
+    & button {
+      width: 198px;
+      height: 38px;
+
+      background: #f5f7fa;
+      border: 1px solid #c5d2e0;
+      border-radius: 2px;
+    }
+  }
+}
+
+.card-content {
+  display: flex;
+  max-width: 1008px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  background: #abbbcc;
+  border: 1px solid #abbbcc;
+  margin: 5px;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    background: #ccc;
+    min-height: 160px;
+  }
+
+  &__infos {
+    height: 160px;
+    background: white;
+    padding: 16px;
+  }
+
+  &__title {
+    color: #0c1932;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__time {
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(12, 25, 50, 0.6);
+    padding: 8px 0 16px;
+  }
+
+  &__wards {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(12, 25, 50, 0.8);
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
